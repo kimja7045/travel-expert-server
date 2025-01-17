@@ -2,7 +2,7 @@
 
 ## TODO
 
-- [ ] vercel deploy
+- [x] vercel deploy
 - [ ] db connect
 - [ ] orm like prisma
 - [ ] table
