@@ -3,11 +3,11 @@ import { ObjectType, Field, ID } from '@nestjs/graphql';
 @ObjectType({ description: 'user' })
 export class User {
   @Field(() => ID)
-  id: number;
+  id: string;
 
-  @Field(() => String, { description: 'name' })
+  @Field({ description: '이름' })
   name: string;
 
-  @Field(() => String, { description: '소셜 종류' })
+  @Field({ description: '소셜 종류', nullable: true })
   social: string;
 }

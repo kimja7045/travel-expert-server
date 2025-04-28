@@ -8,31 +8,42 @@ directive @upper on FIELD_DEFINITION
 type User {
   id: ID!
 
-  """name"""
+  """이름"""
   name: String!
 
   """소셜 종류"""
-  social: String!
+  social: String
 }
 
 type Query {
   users: [User!]!
-  user(id: Int!): User!
+  user(id: String!): User!
 }
 
 type Mutation {
   createUser(createUserInput: CreateUserInput!): User!
   updateUser(updateUserInput: UpdateUserInput!): User!
-  removeUser(id: Int!): User!
+  removeUser(id: String!): User!
 }
 
 input CreateUserInput {
-  """Example field (placeholder)"""
-  exampleField: Int!
+  """아이디"""
+  id: String!
+
+  """이름"""
+  name: String!
+
+  """소셜 종류"""
+  social: String
 }
 
 input UpdateUserInput {
-  """Example field (placeholder)"""
-  exampleField: Int
-  id: Int!
+  """아이디"""
+  id: String
+
+  """이름"""
+  name: String
+
+  """소셜 종류"""
+  social: String
 }
