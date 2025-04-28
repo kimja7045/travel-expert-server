@@ -10,7 +10,7 @@ import { UsersModule } from './users/users.module';
       driver: ApolloDriver,
       graphiql: process.env.NODE_ENV === 'development',
       debug: process.env.NODE_ENV === 'development',
-      autoSchemaFile: 'schema.gql',
+      autoSchemaFile: 'tmp/schema.gql',
       // transformSchema: (schema) => upperDirectiveTransformer(schema, 'upper'),
       installSubscriptionHandlers: true,
       buildSchemaOptions: {
