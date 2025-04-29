@@ -3,6 +3,7 @@ import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
 import { DirectiveLocation, GraphQLDirective } from 'graphql';
 import { UsersModule } from './users/users.module';
+import { PlacesModule } from './places/places.module';
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import { UsersModule } from './users/users.module';
       },
     }),
     UsersModule,
+    PlacesModule,
   ],
 })
 export class AppModule {}
