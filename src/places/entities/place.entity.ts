@@ -27,4 +27,10 @@ export class Place {
   phone?: string;
 }
 
-export type PlaceType = 'hotel' | 'restaurant' | 'cafe' | 'bar' | 'shop';
+export type PlaceType =
+  | 'hotel'
+  | 'restaurant'
+  | 'cafe'
+  | 'bar'
+  | 'shop'
+  | 'hotplace';

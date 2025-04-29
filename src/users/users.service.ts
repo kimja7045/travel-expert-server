@@ -6,7 +6,7 @@ import { UpdateUserInput } from './dto/update-user.input';
 export class UsersService {
   private users = [
     { id: '1', name: 'John Doe', social: 'facebook' },
-    { id: '2', name: 'Jane Doe', social: 'google' },
+    { id: '2', name: 'Luke Kim', social: 'google' },
   ];
 
   create({ id, name, social }: CreateUserInput) {
