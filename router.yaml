@@ -3,3 +3,4 @@ csrf:
     - X-Apollo-Operation-Name
     - Apollo-Require-Preflight
     - Some-Special-Header
+  unsafe_disabled: true
